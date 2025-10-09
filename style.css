@@ -1,6 +1,6 @@
 /* Top navigation bar */
 #topBar {
-  background-color: #FFFFFF;  /* Blue color — you can change it */
+  background-color: #FFFFFF;  /* White color — you can change it */
   height: 60px;                /* Adjust the height */
   display: flex;               /* Allows horizontal layout of icons */
   align-items: center;         /* Vertically center the icons */
@@ -30,4 +30,5 @@
   width: 24px;
   height: 24px;
 }
+
 

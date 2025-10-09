@@ -1,0 +1,32 @@
+/* Top navigation bar */
+#topBar {
+  background-color: #3498db;  /* Blue color — you can change it */
+  height: 60px;                /* Adjust the height */
+  display: flex;               /* Allows horizontal layout of icons */
+  align-items: center;         /* Vertically center the icons */
+  padding: 0 16px;             /* Left and right spacing */
+  gap: 16px;                   /* Space between buttons/icons */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional shadow */
+}
+
+/* Make buttons inside the top bar look nice */
+#topBar button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#topBar button:hover {
+  background-color: rgba(255,255,255,0.2); /* subtle hover effect */
+}
+
+#topBar svg {
+  fill: white;  /* icon color */
+  width: 24px;
+  height: 24px;
+}

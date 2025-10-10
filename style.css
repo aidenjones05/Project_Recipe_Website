@@ -31,6 +31,8 @@ h1 { /* if not using main, use first element after top bar */
   align-items: center;
   justify-content: center;
   color: #E57373;
+  font-weight: 500;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
 
 #topBar button:hover {
@@ -50,5 +52,6 @@ h1 { /* if not using main, use first element after top bar */
   border-color: #D32F2F;             /* Slightly Darker Pink border on focus */
   box-shadow: 0 0 0 3px rgba(229, 115, 115, 0.3); /* subtle focus glow */
 }
+
 
 

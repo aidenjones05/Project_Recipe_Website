@@ -25,7 +25,7 @@ h1 { /* if not using main, use first element after top bar */
   background: transparent;
   border: 2px solid transparent;
   cursor: pointer;
-  padding: 8px;
+  padding: 8px 16px;
   border-radius: 6px;
   display: flex;
   align-items: center;
@@ -53,6 +53,7 @@ h1 { /* if not using main, use first element after top bar */
   border-color: #D32F2F;             /* Slightly Darker Pink border on focus */
   box-shadow: 0 0 0 3px rgba(229, 115, 115, 0.3); /* subtle focus glow */
 }
+
 
 
 

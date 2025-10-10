@@ -72,12 +72,9 @@ h1 { /* if not using main, use first element after top bar */
   color: #5D4037; /* cocoa brown text */
 }
 
-
-
-
-
-
-
-
-
-
+hr {
+  border: none;                 /* removes the default 3D line style */
+  border-top: 2px solid #A5D6A7;   /* adds a clean gray line */
+  margin: 40px 0;               /* space above and below */
+  width: 100%;                  /* full width of the page */
+}

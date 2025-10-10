@@ -79,4 +79,33 @@ hr {
   width: 100%;                  /* full width of the page */
 }
 
+.recipe-card {
+  display: block;                 /* makes the <a> behave like a block */
+  width: 300px;                   /* card width */
+  text-decoration: none;          /* remove underline from link */
+  color: inherit;                 /* use text color from parent */
+  border: 1px transparent #ccc;         /* subtle border */
+  border-radius: 12px;            /* rounded corners */
+  overflow: hidden;               /* clip image edges nicely */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* soft shadow */
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin: 20px;                   /* spacing if multiple cards */
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;              /* makes image fit nicely without stretching */
+}
+
+.recipe-card h3 {
+  padding: 10px;
+  text-align: center;
+}
+
+.recipe-card:hover {
+  transform: translateY(-4px);    /* subtle “lift” on hover */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
 

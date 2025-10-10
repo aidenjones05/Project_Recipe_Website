@@ -68,6 +68,9 @@ h1 { /* if not using main, use first element after top bar */
   color: #444;
 }
 
+.content-box h1 {
+  color: #5D4037; /* cocoa brown text */
+}
 
 
 

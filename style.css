@@ -32,13 +32,14 @@ h1 { /* if not using main, use first element after top bar */
   justify-content: center;
   color: #E57373;
   font-weight: 500;
-  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 #topBar button:hover {
   border-color: #444444; /* Warm Gray */
   background-color: rgba(255,255,255,0.2); /* subtle hover effect */
   color: #FFFFFF; /* white text on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 #topBar svg {
@@ -53,6 +54,7 @@ h1 { /* if not using main, use first element after top bar */
   border-color: #D32F2F;             /* Slightly Darker Pink border on focus */
   box-shadow: 0 0 0 3px rgba(229, 115, 115, 0.3); /* subtle focus glow */
 }
+
 
 
 

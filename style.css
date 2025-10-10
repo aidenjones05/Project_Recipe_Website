@@ -15,7 +15,7 @@
 body {
   margin: 0; /* remove default margin */
   font-family: "system-ui", sans-serif; 
-  color: #FFF8E1;
+  background-color: #FFF8E1;
 }
 
 h1 { /* if not using main, use first element after top bar */
@@ -71,6 +71,7 @@ h1 { /* if not using main, use first element after top bar */
 .content-box h1 {
   color: #5D4037; /* cocoa brown text */
 }
+
 
 
 

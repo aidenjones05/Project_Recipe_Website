@@ -7,6 +7,17 @@
   padding: 0 16px;             /* Left and right spacing */
   gap: 16px;                   /* Space between buttons/icons */
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional shadow */
+  position: sticky;  /* Makes the bar stick */ 
+  top: 0;            /* Stick to the top */
+  z-index: 1000;     /* Ensure it’s above other content */
+}
+
+body {
+  margin: 0; /* remove default margin */
+}
+
+main { /* if not using main, use first element after top bar */
+  padding-top: 60px; /* same as topBar height */
 }
 
 /* Make buttons inside the top bar look nice */
@@ -30,5 +41,6 @@
   width: 24px;
   height: 24px;
 }
+
 
 

@@ -95,7 +95,7 @@ hr {
 .recipe-card img {
   width: 100%;
   height: 150px;
-  object-fit: cover;              /* makes image fit nicely without stretching */
+  object-fit: contain;              /* makes image fit nicely without stretching */
 }
 
 .recipe-card h3 {
@@ -107,6 +107,7 @@ hr {
   transform: translateY(-4px);    /* subtle “lift” on hover */
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
+
 
 
 

@@ -36,7 +36,7 @@ h1 { /* if not using main, use first element after top bar */
 }
 
 #topBar button:hover {
-  border-color: black;
+  border-color: #444444; /* Warm Gray */
   background-color: rgba(255,255,255,0.2); /* subtle hover effect */
   color: #FFFFFF; /* white text on hover */
 }
@@ -53,6 +53,7 @@ h1 { /* if not using main, use first element after top bar */
   border-color: #D32F2F;             /* Slightly Darker Pink border on focus */
   box-shadow: 0 0 0 3px rgba(229, 115, 115, 0.3); /* subtle focus glow */
 }
+
 
 
 

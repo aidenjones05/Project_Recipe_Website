@@ -55,6 +55,15 @@ h1 { /* if not using main, use first element after top bar */
   box-shadow: 0 0 0 3px rgba(229, 115, 115, 0.3); /* subtle focus glow */
 }
 
+.content-box {
+  max-width: 800px;            /* limits width so it doesn’t stretch too far */
+  width: 90%;                  /* so it shrinks nicely on small screens */
+  margin: 40px auto;           /* centers the box horizontally */
+  padding: 20px;               /* adds space inside the box */
+  background-color: #fff;      /* gives it a white “bubble” background */
+  border-radius: 12px;         /* rounded corners for a softer look */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* light shadow to lift it off the page */
+}
 
 
 

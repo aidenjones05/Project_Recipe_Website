@@ -81,9 +81,9 @@ hr {
 
 .recipe-card {
   display: block;                 /* makes the <a> behave like a block */
-  width: 300px;                   /* card width */
+  width: 200px;                   /* card width */
   text-decoration: none;          /* remove underline from link */
-  color: inherit;                 /* use text color from parent */
+  color: #5D4037;                 /* use text color from parent */
   border: 1px transparent #ccc;         /* subtle border */
   border-radius: 12px;            /* rounded corners */
   overflow: hidden;               /* clip image edges nicely */
@@ -94,7 +94,7 @@ hr {
 
 .recipe-card img {
   width: 100%;
-  height: 200px;
+  height: 150px;
   object-fit: cover;              /* makes image fit nicely without stretching */
 }
 
@@ -107,5 +107,6 @@ hr {
   transform: translateY(-4px);    /* subtle “lift” on hover */
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
+
 
 

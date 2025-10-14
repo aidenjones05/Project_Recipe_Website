@@ -1,6 +1,29 @@
+:root {
+  /* Light mode colors */
+  --color-background: #FFF8E1; /* Vanilla Cream */
+  --color-surface: #FFFFFF; /* White */
+  --color-heading: #5D4037; /* Cocoa Brown */
+  --color-text: #444444; /* Warm Gray */
+  --color-primary: #E57373; /* Strawberry Pink */
+  --color-primary-hover: #D32F2F; /* Slightly Darker Pink */
+  --color-accent: #A5D6A7; /* Mint Green */
+}
+
+/* Dark mode overrides */
+body.dark-mode {
+  --color-background: #2B1E16; /* Rich Cocoa */
+  --color-surface: #3B2A20; /* Dark Mocha */
+  --color-heading: #F5E8D0; /* Creamy Beige */
+  --color-text: #CFC6BE; /* Soft Grayish Tan */
+  --color-primary: #FF8A80; /* Soft Coral Pink */
+  --color-primary-hover: #E64A19; /* Raspberry Red */
+  --color-accent: #81C784; /* Sage Green */
+}
+
 /* Top navigation bar */
 #topBar {
-  background-color: #FFFFFF;  /* White color — you can change it */
+  background-color: var(--color-surface);
+  color: var(--color-heading);
   height: 60px;                /* Adjust the height */
   display: flex;               /* Allows horizontal layout of icons */
   align-items: center;         /* Vertically center the icons */
@@ -15,7 +38,9 @@
 body {
   margin: 0; /* remove default margin */
   font-family: "system-ui", sans-serif; 
-  background-color: #FFF8E1;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1 { /* if not using main, use first element after top bar */
@@ -32,14 +57,15 @@ h1 { /* if not using main, use first element after top bar */
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #E57373;
+  background-color: var(--color-primary);
+  color: white;
   font-weight: 500;
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 #topBar button:hover {
   border-color: #444444; /* Warm Gray */
-  background-color: rgba(255,255,255,0.2); /* subtle hover effect */
+  background-color: var(--color-primary-hover);
   color: #FFFFFF; /* white text on hover */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -109,9 +135,4 @@ hr {
   transform: translateY(-4px);    /* subtle “lift” on hover */
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
-
-
-
-
-
 

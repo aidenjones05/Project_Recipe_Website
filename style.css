@@ -64,7 +64,7 @@ h1 { /* if not using main, use first element after top bar */
 }
 
 #topBar button:hover {
-  border-color: #444444; /* Warm Gray */
+  border-color: tansparent; /* Warm Gray */
   background-color: var(--color-primary-hover);
   color: #FFFFFF; /* white text on hover */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -88,14 +88,14 @@ h1 { /* if not using main, use first element after top bar */
   width: 90%;                  /* so it shrinks nicely on small screens */
   margin: 40px auto;           /* centers the box horizontally */
   padding: 20px;               /* adds space inside the box */
-  background-color: #fff;      /* gives it a white “bubble” background */
+  background-color: var(--color-surface);      /* gives it a white “bubble” background */
   border-radius: 12px;         /* rounded corners for a softer look */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* light shadow to lift it off the page */
-  color: #444;
+  color: var(--color-text);
 }
 
 .content-box h1 {
-  color: #5D4037; /* cocoa brown text */
+  color: var(--color-heading); 
 }
 
 hr {
@@ -103,13 +103,14 @@ hr {
   border-top: 4.5px solid #A5D6A7;   /* adds a clean (colored) line */
   margin: 40px 0;               /* space above and below */
   width: 100%;                  /* full width of the page */
+  color: var(--color-accent);
 }
 
 .recipe-card {
   display: block;                 /* makes the <a> behave like a block */
   width: 200px;                   /* card width */
   text-decoration: none;          /* remove underline from link */
-  color: #5D4037;                 /* use text color from parent */
+  color: var(--color-surface);                
   border: 1px transparent #ccc;         /* subtle border */
   border-radius: 12px;            /* rounded corners */
   overflow: hidden;               /* clip image edges nicely */
@@ -135,4 +136,5 @@ hr {
   transform: translateY(-4px);    /* subtle “lift” on hover */
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
+
 

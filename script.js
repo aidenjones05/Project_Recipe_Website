@@ -7,10 +7,10 @@ homeButton.addEventListener('click', () => {
   window.location.href = '/';
 });
 
+  document.addEventListener('DOMContentLoaded', () => {
   const toggleButton = document.getElementById('modeToggle');
   const body = document.body;
 
-  // Check saved preference
   if (localStorage.getItem('theme') === 'dark') {
     body.classList.add('dark-mode');
     toggleButton.textContent = '☀️ Light Mode';
@@ -23,14 +23,11 @@ homeButton.addEventListener('click', () => {
     localStorage.setItem('theme', darkModeEnabled ? 'dark' : 'light');
   });
 
-if (!localStorage.getItem('theme')) {
-  if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    document.body.classList.add('dark-mode');
-    toggleButton.textContent = '☀️ Light Mode';
+  if (!localStorage.getItem('theme')) {
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      body.classList.add('dark-mode');
+      toggleButton.textContent = '☀️ Light Mode';
+    }
   }
-}
-
-
-
-
+});
 

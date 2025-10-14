@@ -7,7 +7,6 @@ homeButton.addEventListener('click', () => {
   window.location.href = '/';
 });
 
-<script>
   const toggleButton = document.getElementById('modeToggle');
   const body = document.body;
 
@@ -23,7 +22,6 @@ homeButton.addEventListener('click', () => {
     toggleButton.textContent = darkModeEnabled ? '☀️ Light Mode' : '🌙 Dark Mode';
     localStorage.setItem('theme', darkModeEnabled ? 'dark' : 'light');
   });
-</script>
 
 if (!localStorage.getItem('theme')) {
   if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -31,6 +29,7 @@ if (!localStorage.getItem('theme')) {
     toggleButton.textContent = '☀️ Light Mode';
   }
 }
+
 
 
 

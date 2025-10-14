@@ -39,12 +39,16 @@ body {
   margin: 0; /* remove default margin */
   font-family: "system-ui", sans-serif; 
   background-color: var(--color-background);
-  color: var(--color-text);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1 { /* if not using main, use first element after top bar */
   padding-top: 60px; /* same as topBar height */
+  color: var(--color-heading);
+}
+
+h2, p, li, a {
+  color: var(--color-text);
 }
 
 /* Make buttons inside the top bar look nice */
@@ -91,26 +95,20 @@ h1 { /* if not using main, use first element after top bar */
   background-color: var(--color-surface);      /* gives it a white “bubble” background */
   border-radius: 12px;         /* rounded corners for a softer look */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* light shadow to lift it off the page */
-  color: var(--color-text);
-}
-
-.content-box h1 {
-  color: var(--color-heading); 
 }
 
 hr {
   border: none;                 /* removes the default 3D line style */
-  border-top: 4.5px solid #A5D6A7;   /* adds a clean (colored) line */
+  border-top: 4.5px solid var(--color-accent);   /* adds a clean (colored) line */
   margin: 40px 0;               /* space above and below */
   width: 100%;                  /* full width of the page */
-  color: var(--color-accent);
 }
 
 .recipe-card {
   display: block;                 /* makes the <a> behave like a block */
   width: 200px;                   /* card width */
   text-decoration: none;          /* remove underline from link */
-  color: var(--color-surface);                
+  color: black;                
   border: 1px transparent #ccc;         /* subtle border */
   border-radius: 12px;            /* rounded corners */
   overflow: hidden;               /* clip image edges nicely */
@@ -136,6 +134,7 @@ hr {
   transform: translateY(-4px);    /* subtle “lift” on hover */
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
+
 
 
 

@@ -25,6 +25,12 @@ homeButton.addEventListener('click', () => {
   });
 </script>
 
+if (!localStorage.getItem('theme')) {
+  if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.body.classList.add('dark-mode');
+    toggleButton.textContent = '☀️ Light Mode';
+  }
+}
 
 
 

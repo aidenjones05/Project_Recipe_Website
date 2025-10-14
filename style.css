@@ -79,7 +79,7 @@ h1 { /* if not using main, use first element after top bar */
 /* Focus State (for accessibility) */
 #topBar button:focus {
   outline: none;                      /* Remove default outline */
-  border-color: #D32F2F;             /* Slightly Darker Pink border on focus */
+  border-color: var(--color-primary-hover);             /* Slightly Darker Pink border on focus */
   box-shadow: 0 0 0 3px rgba(229, 115, 115, 0.3); /* subtle focus glow */
 }
 
@@ -136,5 +136,6 @@ hr {
   transform: translateY(-4px);    /* subtle “lift” on hover */
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
+
 
 

@@ -108,8 +108,8 @@ hr {
   display: block;                 /* makes the <a> behave like a block */
   width: 200px;                   /* card width */
   text-decoration: none;          /* remove underline from link */
-  color: black;       
-  background-color: white;
+  color: var(--color-text);       
+  background-color: #fff;
   border: 1px transparent #ccc;         /* subtle border */
   border-radius: 12px;            /* rounded corners */
   overflow: hidden;               /* clip image edges nicely */
@@ -135,6 +135,7 @@ hr {
   transform: translateY(-4px);    /* subtle “lift” on hover */
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
+
 
 
 

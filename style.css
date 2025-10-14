@@ -47,7 +47,7 @@ h1 { /* if not using main, use first element after top bar */
   color: var(--color-heading);
 }
 
-h2, p, li, a {
+h2, h3, h4, h5, h6, p, li, a {
   color: var(--color-text);
 }
 
@@ -135,6 +135,7 @@ hr {
   transform: translateY(-4px);    /* subtle “lift” on hover */
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
+
 
 
 
